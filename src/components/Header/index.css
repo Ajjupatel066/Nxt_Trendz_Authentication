@@ -1,0 +1,122 @@
+/* Write your CSS code here */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  padding: 25px 20px 25px 20px;
+}
+
+.website-logo-img {
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .website-logo-img {
+    width: 175px;
+  }
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-items {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-family: 'Roboto';
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #475569;
+  outline: none;
+  cursor: pointer;
+}
+.logout-website-btn {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 10px;
+  padding: 8px 16px;
+  color: white;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .logout-website-btn {
+    display: none;
+  }
+}
+
+.logout-mobile-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .logout-mobile-btn {
+    display: none;
+  }
+}
+
+.nav-icon {
+  width: 24px;
+}
+.nav-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e6f6ff;
+  height: 10vh;
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-icons-container {
+    display: none;
+  }
+}
+
+.mobile-icon-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
